@@ -26,6 +26,7 @@ class START_LOOP:
         # The last operation in the LOOP block
         self.end_op = None
 
+
         # If this IF can be identified as the start of a new
         # line of source code, track that line.
         self.starts_line = None

@@ -4,6 +4,7 @@ var module = angular.module('uploader', []);
  *
  * Usage similar to $http, returns a promise from the send method
  */
+
 module.service('uploader', ['$q', function($q) {
   function readyStateChange(deferred, xhr) {
     if(xhr.readyState == 4) {
