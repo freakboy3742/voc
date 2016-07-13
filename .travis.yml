@@ -1,9 +1,13 @@
 language: python
-python:
-  - "3.4.2"
-  - "3.4.4"
+matrix:
+  include:
+    - python: "3.4.2"
+      env: TARGET=test
+    - python: "3.4.4"
+      env: TARGET=test
+    - env: TARGET=beefore
 install:
   - "pip install ."
   - "ant java"
 script:
-  - "python setup.py test"
+  - "python setup.py $TARGET"
