@@ -13,7 +13,9 @@ RESOLVE = object()
 
 
 class START_LOOP:
-    """A pseudo instruction that can be used to mark the
+    """
+
+    A pseudo instruction that can be used to mark the
     start of a loop (either a FOR or a WHILE)
     """
     def __init__(self):
