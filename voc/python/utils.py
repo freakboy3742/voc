@@ -40,6 +40,7 @@ class Command:
     def consume_count(self):
         return sum(c.consume_count for c in self.arguments) + self.operation.consume_count
 
+
     @property
     def product_count(self):
         return sum(c.product_count for c in self.arguments) + self.operation.product_count

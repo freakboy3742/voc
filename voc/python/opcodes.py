@@ -22,6 +22,7 @@ class START_LOOP:
         # The opcode that is the first in the formal LOOP block
         self.start_op = None
 
+
         # The last operation in the LOOP block
         self.end_op = None
 
