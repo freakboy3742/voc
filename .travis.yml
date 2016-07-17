@@ -6,7 +6,7 @@ matrix:
     - python: "3.4.4"
       env: TARGET=test
     - env:
-        - TARGET="beefore -u $BEEFORE_GITHUB_USERNAME -r $TRAVIS_REPO_SLUG -c $TRAVIS_COMMIT -q $TRAVIS_PULL_REQUEST -d $TRAVIS_BUILD_DIR"
+        - TARGET="beefore -u $BEEFORE_GITHUB_USERNAME -r $TRAVIS_REPO_SLUG -c $TRAVIS_COMMIT -p $TRAVIS_PULL_REQUEST -d $TRAVIS_BUILD_DIR"
         - BEEFORE_TARGET_URL=$TRAVIS_BUILD_URL
 install:
   - "pip install ."
