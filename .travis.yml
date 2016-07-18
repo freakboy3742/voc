@@ -13,4 +13,5 @@ install:
   - "pip install ."
   - "pip install git+https://github.com/pybee/beefore.git#egg=beefore"
 script:
+  - export
   - "python setup.py $TARGET"
