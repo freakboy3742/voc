@@ -8,6 +8,7 @@ matrix:
     - env:
         - TARGET="beefore -u $BEEFORE_GITHUB_USERNAME -r $TRAVIS_REPO_SLUG -c $TRAVIS_COMMIT -p $TRAVIS_PULL_REQUEST -d $TRAVIS_BUILD_DIR"
         - BEEFORE_TARGET_URL=$TRAVIS_BUILD_URL
+        - BEEFORE_GITHUB_PASSWORD=$BEEFORE_GITHUB_PASSWORD
 install:
   - "pip install ."
   - "pip install git+https://github.com/pybee/beefore.git#egg=beefore"
